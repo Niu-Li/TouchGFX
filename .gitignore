@@ -1,0 +1,43 @@
+# 根目录下忽略项
+*.bat
+*.txt
+
+
+# MDK-ARM文件夹下忽略项
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/Demo/
+MDK-ARM/*.scvd
+MDK-ARM/*.lst
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.bak
+
+
+# Drivers文件夹下忽略项
+Drivers/CMSIS/Core/
+Drivers/CMSIS/Core_A/
+Drivers/CMSIS/DSP/
+Drivers/CMSIS/Lib/
+Drivers/CMSIS/NN/
+Drivers/CMSIS/RTOS2/
+
+# Middlewares文件夹下忽略项
+Middlewares/Third_Party/RT-Thread/bsp/
+Middlewares/Third_Party/RT-Thread/docs/
+Middlewares/Third_Party/RT-Thread/libcpu/risc-v/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/arm926/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/armv6/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-a/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-m0/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-m3/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-m4/
+Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-r4/
+Middlewares/Third_Party/RT-Thread/AUTHORS
+Middlewares/Third_Party/RT-Thread/LICENSE
+Middlewares/Third_Party/RT-Thread/*.md
+
+# Src文件夹下忽略项
+Src/build/
+Src/simulator/msvs/.vs/
+Src/simulator/msvs/*.db
+Src/simulator/msvs/.open.db
