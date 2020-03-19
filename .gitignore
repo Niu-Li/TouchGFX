@@ -1,0 +1,22 @@
+# 根目录下忽略项
+*.bat
+*.txt
+
+
+# MDK-ARM文件夹下忽略项
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/TouchGFX/
+MDK-ARM/*.scvd
+MDK-ARM/*.lst
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.bak
+
+
+# Drivers文件夹下忽略项
+Drivers/CMSIS/Core/
+Drivers/CMSIS/Core_A/
+Drivers/CMSIS/DSP/
+Drivers/CMSIS/Lib/
+Drivers/CMSIS/NN/
+Drivers/CMSIS/RTOS2/
