@@ -8,7 +8,7 @@
 #include <mvp/View.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -26,9 +26,19 @@ protected:
      * Member Declarations
      */
     touchgfx::Box box1;
-    touchgfx::TextArea textArea1;
+    touchgfx::ButtonWithLabel buttonWithLabel1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

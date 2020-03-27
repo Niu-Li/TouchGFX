@@ -3,24 +3,40 @@
 /*********************************************************************************/
 #include <gui_generated/screen_screen/screenViewBase.hpp>
 #include <touchgfx/Color.hpp>
+#include "BitmapDatabase.hpp"
 #include <texts/TextKeysAndLanguages.hpp>
 
-screenViewBase::screenViewBase()
+screenViewBase::screenViewBase() :
+    buttonCallback(this, &screenViewBase::buttonCallbackHandler)
 {
 
     box1.setPosition(0, 0, 480, 272);
     box1.setColor(touchgfx::Color::getColorFrom24BitRGB(56, 4, 240));
 
-    textArea1.setXY(194, 124);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
+    buttonWithLabel1.setXY(155, 106);
+    buttonWithLabel1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    buttonWithLabel1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID1));
+    buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    buttonWithLabel1.setAction(buttonCallback);
 
     add(box1);
-    add(textArea1);
+    add(buttonWithLabel1);
 }
 
 void screenViewBase::setupScreen()
 {
 
+}
+
+void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &buttonWithLabel1)
+    {
+        //Interaction1
+        //When buttonWithLabel1 clicked change color of box1
+        //Set RGB color R:59, G:252, B:5 on box1
+        box1.setColor(touchgfx::Color::getColorFrom24BitRGB(59,252,5));
+        box1.invalidate();
+    }
 }

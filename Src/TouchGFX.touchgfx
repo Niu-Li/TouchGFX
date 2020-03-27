@@ -23,22 +23,28 @@
             "Moveable": false
           },
           {
-            "TextId": "SingleUseId1",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
             "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea1",
-            "X": 194,
-            "Y": 124,
-            "Width": 92,
-            "Height": 25,
-            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4",
+            "Name": "buttonWithLabel1",
+            "X": 155,
+            "Y": 106,
+            "Width": 170,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -46,7 +52,25 @@
             "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "buttonWithLabel1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Color": {
+                "Red": 59,
+                "Green": 252,
+                "Blue": 5
+              },
+              "ActionComponent": "box1",
+              "Type": "ActionSetColor"
+            }
+          }
+        ],
         "Name": "screen",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0

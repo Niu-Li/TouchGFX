@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=E:/STM32F746-FreeRTOS/TouchGFX/Inc
+HeaderPath=E:/STM32F746-FreeRTOS/touchgfx/Inc
 HeaderFiles=FreeRTOSConfig.h;app_touchgfx.h;TouchGFXGeneratedHAL.hpp;TouchGFXHAL.hpp;STM32TouchController.hpp;STM32DMA.hpp;stm32f7xx_it.h;stm32f7xx_hal_conf.h;main.h;
-SourcePath=E:/STM32F746-FreeRTOS/TouchGFX/Src
+SourcePath=E:/STM32F746-FreeRTOS/touchgfx/Src
 SourceFiles=freertos.c;TouchGFXConfiguration.cpp;TouchGFXGeneratedHAL.cpp;TouchGFXHAL.cpp;STM32TouchController.cpp;STM32DMA.cpp;OSWrappers.cpp;TouchGFXGPIO.cpp;app_touchgfx.c;stm32f7xx_it.c;stm32f7xx_hal_msp.c;stm32f7xx_hal_timebase_tim.c;main.c;
 
 [PreviousLibFiles]

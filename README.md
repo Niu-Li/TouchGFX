@@ -25,6 +25,7 @@
 |   FMC    |   开启   |     存储扩展      |
 |   SDRAM  |   开启   |    用于TouchGFX   |
 |   TIM    |   TIM6   |    HAL系统时钟    |
+|   I2C3   |   开启   |    触摸芯片通信   |
 
 
 ## FreeRTOS任务
