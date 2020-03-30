@@ -23,28 +23,17 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Blue_Togglebars_Toggle_round_large_button_ON.png",
+            "Released": "__designer\\Blue_Togglebars_Toggle_round_large_button_OFF.png",
             "Alpha": 255,
-            "TextId": "SingleUseId1",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
             "Style": "Style4",
-            "Name": "buttonWithLabel1",
-            "X": 155,
-            "Y": 106,
-            "Width": 170,
-            "Height": 60,
-            "Type": "ButtonWithLabel",
+            "Name": "toggleButton1",
+            "X": 176,
+            "Y": 117,
+            "Width": 128,
+            "Height": 38,
+            "Type": "ToggleButton",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -52,19 +41,31 @@
             "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "toggleButton1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Color": {
+                "Red": 49,
+                "Green": 8,
+                "Blue": 250
+              },
+              "ActionComponent": "box1",
+              "Type": "ActionSetColor"
+            }
+          }
+        ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
-    "TextEntries": [
-      {
-        "TextEntryId": "SingleUseId1",
-        "IsResource": false
-      }
-    ],
     "Name": "Demo",
     "Resolution": {
       "Width": 480,
